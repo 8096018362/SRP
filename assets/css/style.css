@@ -1485,9 +1485,15 @@ img.mfp-img {
 
  @media all and (min-width: 480px) {
     .deskContent {display:block;}
-    .phoneContent {display:none;}    
+    .phoneContent {display:none;}
+	.mobile-view{
+		display:none;
+	}
 }
-
+@media all and (max-width: 479px) {
+	.deskContent {display:none;}
+	.phoneContent {display:block;}
+}
 
 @media (min-width: 768px){
 	.navbar-brand {
@@ -1498,12 +1504,11 @@ img.mfp-img {
 
 @media all and (max-width: 479px) {
     .deskContent {display:none;}
-	
-    .phoneContent {
+	.phoneContent {
         display:block;
     }
 	.navbar-brand{
-		 display:block;
+		display:block
 	}
 	.seva-info,.sevaName{
 		padding-left: 0px;
@@ -1517,6 +1522,9 @@ img.mfp-img {
 	.itro-img > .col-xs-12 {
     	margin-top: 120px;
 	}
+	.wrapsection{
+		padding-top: 0px;
+	}
 	
 }
 .navbar-inverse .navbar-brand{
@@ -1525,10 +1533,9 @@ img.mfp-img {
 
 @media (max-width: 767px){
 
-.accomidatio-table{
-	margin-left: 0px;
-}
-	
+	.accomidatio-table{
+		margin-left: 0px;
+	}
 	.history .container {
     	max-width: 690px;
      	padding-left: 9px; 
